@@ -1,0 +1,11 @@
+<launch>
+
+    <!--node name="talker_cmd" pkg="smart_car" type="talker_cmd" output="screen"/-->
+    
+    <node name="smart_car_node" pkg="smart_car" type="smart_car_node" output="screen">
+	    <param name="port_name" value="/dev/smart_car"/>
+        <param name="port_name" value="/dev/ttyUSB1"/>
+   
+    </node>
+       
+</launch>
